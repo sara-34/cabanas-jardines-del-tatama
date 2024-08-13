@@ -18,12 +18,12 @@ function App() {
     {
       title: 'Sesión 1',
       description: 'Descripción de la sesión 1.',
-      whatsappLink: 'https://wa.me/1234567890'
+      whatsappLink: 'https://wa.me/3122587675'
     },
     {
       title: 'Sesión 2',
       description: 'Descripción de la sesión 2.',
-      whatsappLink: 'https://wa.me/0987654321'
+      whatsappLink: 'https://wa.me/3122587675'
     },
     // Puedes añadir más sesiones aquí
   ];
