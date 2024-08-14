@@ -1,40 +1,175 @@
-.App-header {
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
   text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: #333;
+}
+
+h1, h2 {
+  margin: 0.5em 0;
+}
+
+/* NavBar styles */
+.nav-class {
+  background-color: #4CAF50;
+  padding: 1em 0;
+}
+
+.lista-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.lista-nav li {
+  margin: 0 15px;
+}
+
+.lista-nav a {
   color: white;
-}
-
-.banner {
-  margin-top: 20px;
-}
-
-.banner img {
-  max-width: 100%; /* Asegura que la imagen no se desborde */
-  height: auto;
-  border-radius: 8px; /* Bordes redondeados para un toque elegante */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacar la imagen */
-}
-
-
-.Session {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #444;
-}
-
-.whatsapp-button {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  background-color: #25D366;
-  border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.whatsapp-button:hover {
-  background-color: #128C7E;
+.lista-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner styles */
+.App-header {
+  background-color: #f7f7f7;
+  padding: 2em 0;
+  margin-bottom: 2em;
+}
+
+.banner {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+/* Image Gallery styles */
+.image-gallery {
+  padding: 2em 0;
+  background-color: #e9ecef;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CabinCard styles */
+.cabins-section {
+  padding: 2em 0;
+}
+
+.cabins {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.cabin-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 1em;
+  text-align: left;
+}
+
+.cabin-card h3 {
+  margin-top: 0;
+}
+
+.cabin-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.more-info-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.more-info-button:hover {
+  background-color: #45a049;
+}
+
+/* Map styles */
+.map-section {
+  padding: 2em 0;
+  background-color: #f7f7f7;
+}
+
+.map-section iframe {
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.App-footer {
+  background-color: #333;
+  color: white;
+  padding: 2em 0;
+}
+
+.App-footer h2, .App-footer p {
+  margin: 0.5em 0;
+}
+
+.reserve-button {
+  background-color: #ff4500;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.reserve-button:hover {
+  background-color: #e43f00;
 }
