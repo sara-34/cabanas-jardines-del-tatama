@@ -1,12 +1,21 @@
-.App {
-  text-align: center;
-}
-
 .App-header {
-  background-color: #282c34;
+  text-align: center;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
   color: white;
 }
+
+.banner {
+  margin-top: 20px;
+}
+
+.banner img {
+  max-width: 100%; /* Asegura que la imagen no se desborde */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para un toque elegante */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacar la imagen */
+}
+
 
 .Session {
   margin: 20px;
