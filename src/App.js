@@ -18,20 +18,22 @@ function NavBar() {
 function Banner() {
   return (
     <header className="App-header">
-      <div className="banner">
+      <div className='titulo'>
         <h1>Cabañas Jardines del Tatamá</h1>
+      </div>
+      <div className="banner">
         <img src={fondo} alt="Imagen de Cabañas Jardines del Tatamá" />
       </div>
     </header>
   );
-}
+}  
 
 function ImageGallery() {
   const images = [
     'imagenes/DCS_8645.JPG',
     'imagenes/image2.jpg',
     'imagenes/image3.jpg',
-    // Añade más imágenes aquí
+    
   ];
 
   return (
