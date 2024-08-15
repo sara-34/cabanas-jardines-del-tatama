@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import fondo from './assets/img/fondo.jpg'
 
 function NavBar() {
   return (
@@ -19,7 +20,7 @@ function Banner() {
     <header className="App-header">
       <div className="banner">
         <h1>Cabañas Jardines del Tatamá</h1>
-        <img src='imagenes/DSC_8645.JPG' alt="Imagen de Cabañas Jardines del Tatamá" />
+        <img src={fondo} alt="Imagen de Cabañas Jardines del Tatamá" />
       </div>
     </header>
   );
