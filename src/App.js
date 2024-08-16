@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import fondo from './assets/img/fondo.jpg'
+import fondo from './assets/img/fondo2.jpg'
 
 function NavBar() {
   return (
