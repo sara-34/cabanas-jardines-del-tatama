@@ -30,6 +30,7 @@ function Banner() {
 
 
 
+
 function Parrafo(){
   return (
     <div className='parrafo'>

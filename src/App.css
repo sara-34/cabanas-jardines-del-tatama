@@ -43,13 +43,27 @@ h1, h2 {
 
 .banner {
   position: relative;
+  overflow: hidden;
 }
+
+
 
 .banner-img {
   width: 100%;
   height: auto;
-  display: block;
+  animation: revealCurtain 2s ease-out forwards; /* Aplica la animación */
+  clip-path: inset(0 50% 0 50%);
 }
+
+@keyframes revealCurtain {
+  0% {
+    clip-path: inset(0 50% 0 50%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 
 .nav-class {
   background-color: transparent;
@@ -82,7 +96,7 @@ h1, h2 {
 
 .lista-nav a {
   color: white;
-  text-decoration: none;
+  text-decoration:line;
   font-weight: bold;
 }
 
@@ -112,9 +126,13 @@ h1, h2 {
   width: 100%;
   height: auto;
   display: block;
-  filter: brightness(60%);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.934); /* Sombra de la imagen */
+  object-fit: cover; /* Ajusta la imagen sin distorsión */
+  image-rendering: -webkit-optimize-contrast; /* Para navegadores WebKit */
+  image-rendering: crisp-edges;
+  filter: brightness(85%);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9); /* Sombra de la imagen */
 }
+
 
 
 
