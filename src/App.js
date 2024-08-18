@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import fondo from './assets/img/fondo2.jpg'
-import parrafo from './assets/img/imgparrafo.jpg'
+import parrafo from './assets/img/DSC_8740.JPG'
 
 function NavBar() {
   return (

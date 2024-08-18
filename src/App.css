@@ -167,20 +167,29 @@ h1, h2 {
   align-items: center;
   gap: 20px; /* Espacio entre la imagen y el texto */
   padding: 20px;
-  background-color: #5C7356;
+  background-color: var(--colorverdeoscuro);
   box-sizing: border-box;
 }
 
 .imagen-contenedor {
   flex: 1;
-  min-width: 150px; /* Ajusta según el tamaño de tu imagen */
+  max-width: 100%; /* Asegura que el contenedor no sea más ancho que su contenedor padre */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  padding: 20px;
+  background-color: var(--colorblandohabano);
+  box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra la imagen dentro del contenedor */
 }
 
 .banner-img {
-  width: 100%;
+  max-width: 100%; /* La imagen se ajustará al tamaño del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Ajusta la imagen sin distorsión */
+  display: block; /* Elimina el espacio en blanco debajo de la imagen */
 }
+
+
 
 .parrafo p {
   flex: 2;
@@ -188,7 +197,7 @@ h1, h2 {
   text-align: center; /* Alinea el texto a la izquierda */
   font-weight: bold;
   font-size: 16px;
-  color: white;
+  color: var(--colorblandohabano);
   line-height: 1.5;
 }
 
