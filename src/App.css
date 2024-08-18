@@ -200,6 +200,22 @@ h1, h2 {
   }
 }
 
+@media (max-width: 360px) {
+  .parrafo p {
+    font-size: 16px; /* Disminuye el tamaño del texto en pantallas pequeñas */
+    padding: 10px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  .lista-nav li{
+    font-size: 13px;
+
+  }
+}
+
 
 /* CabinCard styles */
 .cabins-section {
