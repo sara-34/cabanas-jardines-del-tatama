@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import fondo from './assets/img/fondo2.jpg'
+import parrafo from './assets/img/imgparrafo.jpg'
 
 function NavBar() {
   return (
@@ -31,23 +32,28 @@ function Banner() {
 
 
 
-function Parrafo(){
+function Parrafo() {
   return (
     <div className='parrafo'>
-      <p>Descubre un oasis de tranquilidad y 
-        diversión en Cabañas Jardines del Tatamá. 
-        Sumérgete en la belleza natural de nuestro entorno 
-        con actividades al aire libre, disfruta de momentos
-        de entretenimiento en nuestro salón de juegos, y deléitate
-        con las delicias de nuestro restaurante. Además, ofrecemos
-        acogedoras cabañas para que puedas relajarte y desconectar.
-        Ya sea que busques una escapada de un día o una estadía
-        prolongada, en Cabañas Jardines del Tatamá encontrarás el 
-        lugar perfecto para crear recuerdos inolvidables.</p>
+      <div className="imagen-contenedor">
+        <img src={parrafo} alt="parrafo" className="banner-img" />
+      </div>
+      <p>
+      Descubre un oasis de tranquilidad
+       y diversión en Cabañas Jardines del Tatamá. 
+       Relájate en nuestras acogedoras cabañas mientras 
+       disfrutas de actividades al aire libre, entretenimiento
+        en nuestro salón de juegos y deliciosos platillos en
+         nuestro restaurante. Ya sea para una escapada corta o 
+         una estadía prolongada, te ofrecemos el lugar perfecto
+        para crear recuerdos
+       inolvidables en un entorno natural impresionante.
+      </p>
     </div>
-
   );
 }
+
+
 
 function ImageGallery() {
   const images = [
