@@ -155,7 +155,7 @@ h1, h2 {
   width: 300px;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px solid 1px black ; /* Esquinas redondeadas */
+  border-radius: 5px; /* Esquinas redondeadas */
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra difusa de la imagen */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para las animaciones */
 }

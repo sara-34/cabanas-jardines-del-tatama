@@ -79,6 +79,7 @@ function ImageGallery() {
         <img src={galeria10} alt="parrafo" className="banner-img" />
         <img src={galeria3} alt="parrafo" className="banner-img" />
         <img src={galeria11} alt="parrafo" className="banner-img" />
+        <img src={galeria6} alt="parrafo" className="banner-img" />
         <img src={galeria4} alt="parrafo" className="banner-img" />
       </div>
     </section>
