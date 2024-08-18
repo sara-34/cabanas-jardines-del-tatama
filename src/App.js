@@ -18,15 +18,16 @@ function NavBar() {
 function Banner() {
   return (
     <header className="App-header">
+      <div className="banner">
+        <img src={fondo} alt="Imagen de Cabañas Jardines del Tatamá" className="banner-img" />
+      </div>
       <div className='titulo'>
         <h1>Cabañas Jardines del Tatamá</h1>
       </div>
-      <div className="banner">
-        <img src={fondo} alt="Imagen de Cabañas Jardines del Tatamá" />
-      </div>
     </header>
   );
-}  
+}
+
 
 
 function Parrafo(){
