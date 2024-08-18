@@ -194,6 +194,10 @@ h1, h2 {
     font-size: 16px; /* Disminuye el tamaño del texto en pantallas pequeñas */
     padding: 10px;
   }
+
+  h1{
+    font-size: 30px;
+  }
 }
 
 
