@@ -141,7 +141,7 @@ h1, h2 {
 /* Image Gallery styles */
 .image-gallery {
   padding: 2em 0;
-  background-color: #e9ecef;
+  background-color: floralwhite;
 }
 
 .images {
@@ -155,9 +155,17 @@ h1, h2 {
   width: 300px;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px solid 1px black ; /* Esquinas redondeadas */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra difusa de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para las animaciones */
 }
+
+.images img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Sombra difusa más pronunciada al pasar el cursor */
+}
+
+
 
 
 /* Parrafo*/

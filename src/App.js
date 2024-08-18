@@ -2,6 +2,18 @@ import React from 'react';
 import './App.css';
 import fondo from './assets/img/fondo2.jpg'
 import parrafo from './assets/img/DSC_8740.JPG'
+import galeria1 from './assets/img/gal1.jpg'
+import galeria2 from './assets/img/gal2.jpg'
+import galeria3 from './assets/img/gal3.jpg'
+import galeria4 from './assets/img/gal4.jpg'
+import galeria5 from './assets/img/gal5.jpg'
+import galeria6 from './assets/img/gal6.jpg'
+import galeria7 from './assets/img/gal7.jpg'
+import galeria8 from './assets/img/nat1.jpg'
+import galeria9 from './assets/img/nat2.jpg'
+import galeria10 from './assets/img/nat3.jpg'
+import galeria11 from './assets/img/nat4.jpg'
+import galeria12 from './assets/img/nat5.jpg'
 
 function NavBar() {
   return (
@@ -56,20 +68,18 @@ function Parrafo() {
 
 
 function ImageGallery() {
-  const images = [
-    'imagenes/DCS_8645.JPG',
-    'imagenes/image2.jpg',
-    'imagenes/image3.jpg',
-    
-  ];
 
   return (
     <section className="image-gallery">
-      <h2>Galería del Lugar</h2>
+      <h2>Nuestro espacio</h2>
       <div className="images">
-        {images.map((src, index) => (
-          <img key={index} src={src} alt={`Imagen ${index + 1}`} />
-        ))}
+        <img src={galeria1} alt="parrafo" className="banner-img" />
+        <img src={galeria12} alt="parrafo" className="banner-img" />
+        <img src={galeria2} alt="parrafo" className="banner-img" />
+        <img src={galeria10} alt="parrafo" className="banner-img" />
+        <img src={galeria3} alt="parrafo" className="banner-img" />
+        <img src={galeria11} alt="parrafo" className="banner-img" />
+        <img src={galeria4} alt="parrafo" className="banner-img" />
       </div>
     </section>
   );
