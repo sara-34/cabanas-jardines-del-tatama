@@ -6,7 +6,7 @@ import galeria1 from './assets/img/gal1.jpg'
 import galeria2 from './assets/img/gal2.jpg'
 import galeria3 from './assets/img/gal3.jpg'
 import galeria4 from './assets/img/gal4.jpg'
-import galeria5 from './assets/img/cabana2.jpg'
+import cabana2 from './assets/img/cabana2.jpg';
 import galeria6 from './assets/img/gal6.jpg'
 import galeria7 from './assets/img/cabana3.jpg'
 import galeria8 from './assets/img/cabana4.jpg'
@@ -102,7 +102,7 @@ function CabinCard() {
 
         <div className="cabin-card">
           <h3>Cabaña El Recreo</h3>
-          <img src={galeria5} alt="Cabañas" />
+          <img src={cabana2} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
