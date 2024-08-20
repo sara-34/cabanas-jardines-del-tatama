@@ -175,7 +175,7 @@ h1, h2 {
   align-items: center;
   gap: 20px; /* Espacio entre la imagen y el texto */
   padding: 20px;
-  background-color: var(--colorverdeoscuro);
+  background: linear-gradient(70deg, #1d481f, #efd844);
   box-sizing: border-box;
 }
 
@@ -205,7 +205,7 @@ h1, h2 {
   text-align: center; /* Alinea el texto a la izquierda */
   font-weight: bold;
   font-size: 16px;
-  color: var(--colorblandohabano);
+  color: white;
   line-height: 1.5;
 }
 
