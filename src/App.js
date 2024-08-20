@@ -96,7 +96,7 @@ function CabinCard({ title, description, image, moreInfoLink }) {
   return (
     <div className="cabin-card">
       <h3>{title}</h3>
-      <img src={cabana1} alt={`Imagen de ${title}`} />
+      <img src={cabana2} alt={`Imagen de ${title}`} />
       <p>{description}</p>
       <a href={moreInfoLink} className="more-info-button">Ver Más</a>
     </div>
