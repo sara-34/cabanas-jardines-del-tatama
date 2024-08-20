@@ -6,16 +6,12 @@ import galeria1 from './assets/img/gal1.jpg'
 import galeria2 from './assets/img/gal2.jpg'
 import galeria3 from './assets/img/gal3.jpg'
 import galeria4 from './assets/img/gal4.jpg'
-import cabana2 from './assets/img/cabana2.jpg';
 import galeria6 from './assets/img/gal6.jpg'
-import galeria7 from './assets/img/cabana3.jpg'
-import galeria8 from './assets/img/cabana4.jpg'
-import galeria9 from './assets/img/cabana5.jpg'
+
 import galeria10 from './assets/img/nat3.jpg'
 import galeria11 from './assets/img/nat4.jpg'
 import galeria12 from './assets/img/nat5.jpg'
-import cabanas from './assets/img/cabana1.jpg'
-import cabanas6 from './assets/img/cabana6.jpg'
+
 
 function NavBar() {
   return (
@@ -95,42 +91,42 @@ function CabinCard() {
       <div className="cabin-card-container">
         <div className="cabin-card">
           <h3>Cabaña Amaraya</h3>
-          <img src={cabanas} alt="Cabañas" />
+          <img src={fondo} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña El Recreo</h3>
-          <img src={cabana2} alt="Cabañas" />
+          <img src={fondo} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña La Loma</h3>
-          <img src={galeria7} alt="Cabañas" />
+          <img src={fondo} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña Pino</h3>
-          <img src={galeria8} alt="Cabañas" />
+          <img src={fondo} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña Familiar 1</h3>
-          <img src={galeria9} alt="Cabañas" />
+          <img src={fondo} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña Familiar 2</h3>
-          <img src={cabanas6} alt="Cabañas" />
+          <img src={fondo} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
