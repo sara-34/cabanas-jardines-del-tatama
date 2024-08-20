@@ -108,7 +108,7 @@ function CabinsSection() {
     {
       title: 'Cabaña Amaraya',
       description: 'Descripción de la Cabaña 1.',
-      image: './assets/img/cabana1.jpg',
+      image: 'imagenes/cabana2.jpg',
       moreInfoLink: '#'
     },
     {
