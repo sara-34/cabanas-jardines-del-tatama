@@ -14,6 +14,12 @@ import galeria9 from './assets/img/nat2.jpg'
 import galeria10 from './assets/img/nat3.jpg'
 import galeria11 from './assets/img/nat4.jpg'
 import galeria12 from './assets/img/nat5.jpg'
+import cabana1 from './assets/img/cabana1.jpg'
+import cabana2 from './assets/img/cabana2.jpg'
+import cabana3 from './assets/img/cabana3.jpg'
+import cabana4 from './assets/img/cabana4.jpg'
+import cabana5 from './assets/img/cabana5.jpg'
+import cabana6 from './assets/img/cabana6.jpg'
 
 function NavBar() {
   return (
@@ -90,7 +96,7 @@ function CabinCard({ title, description, image, moreInfoLink }) {
   return (
     <div className="cabin-card">
       <h3>{title}</h3>
-      <img src={image} alt={`Imagen de ${title}`} />
+      <img src={cabana1} alt={`Imagen de ${title}`} />
       <p>{description}</p>
       <a href={moreInfoLink} className="more-info-button">Ver Más</a>
     </div>
@@ -102,7 +108,7 @@ function CabinsSection() {
     {
       title: 'Cabaña Amaraya',
       description: 'Descripción de la Cabaña 1.',
-      image: '../imagenes/fondo.jpg',
+      image: './assets/img/cabana1.jpg',
       moreInfoLink: '#'
     },
     {
@@ -161,7 +167,7 @@ function Map() {
       <h2>Ubicación</h2>
       <iframe 
         title="Ubicación de Cabañas Jardines del Tatamá"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093174!2d144.9537363159043!3d-37.81627917975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727b0e4fb567c!2sCabañas%20Jardines%20del%20Tatamá!5e0!3m2!1ses!2sco!4v1633020289465!5m2!1ses!2sco" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1274.0181527253394!2d-76.03961!3d5.2133138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e479545a43f81d9%3A0x1da5bdbb0523ee30!2sJardines%20del%20Tatam%C3%A1!5e1!3m2!1ses!2sco!4v1633020289465!5m2!1ses!2sco" 
         width="600" 
         height="450" 
         style={{border:0}} 
@@ -171,6 +177,7 @@ function Map() {
     </section>
   );
 }
+
 
 function Footer() {
   return (
