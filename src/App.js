@@ -100,18 +100,41 @@ function CabinCard({ title, description, image, moreInfoLink }) {
 function CabinsSection() {
   const cabins = [
     {
-      title: 'Cabaña 1',
+      title: 'Cabaña Amaraya',
       description: 'Descripción de la Cabaña 1.',
       image: '../imagenes/fondo.jpg',
       moreInfoLink: '#'
     },
     {
-      title: 'Cabaña 2',
+      title: 'Cabaña el Recreo',
       description: 'Descripción de la Cabaña 2.',
       image: 'imagenes/cabana2.jpg',
       moreInfoLink: '#'
     },
-    // Añade más cabañas aquí
+    {
+      title: 'Cabaña la Loma',
+      description: 'Descripción de la Cabaña 2.',
+      image: 'imagenes/cabana2.jpg',
+      moreInfoLink: '#'
+    },
+    {
+      title: 'Cabaña Pino',
+      description: 'Descripción de la Cabaña 2.',
+      image: 'imagenes/cabana2.jpg',
+      moreInfoLink: '#'
+    },
+    {
+      title: 'Cabaña Familiar 1',
+      description: 'Descripción de la Cabaña 2.',
+      image: 'imagenes/cabana2.jpg',
+      moreInfoLink: '#'
+    },
+    {
+      title: 'Cabaña Familiar 2',
+      description: 'Descripción de la Cabaña 2.',
+      image: 'imagenes/cabana2.jpg',
+      moreInfoLink: '#'
+    },
   ];
 
   return (
