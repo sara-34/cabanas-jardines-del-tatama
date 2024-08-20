@@ -6,15 +6,16 @@ import galeria1 from './assets/img/gal1.jpg'
 import galeria2 from './assets/img/gal2.jpg'
 import galeria3 from './assets/img/gal3.jpg'
 import galeria4 from './assets/img/gal4.jpg'
-import galeria5 from './assets/img/gal5.jpg'
+import galeria5 from './assets/img/cabana2.jpg'
 import galeria6 from './assets/img/gal6.jpg'
-import galeria7 from './assets/img/gal7.jpg'
-import galeria8 from './assets/img/nat1.jpg'
-import galeria9 from './assets/img/nat2.jpg'
+import galeria7 from './assets/img/cabana3.jpg'
+import galeria8 from './assets/img/cabana4.jpg'
+import galeria9 from './assets/img/cabana5.jpg'
 import galeria10 from './assets/img/nat3.jpg'
 import galeria11 from './assets/img/nat4.jpg'
 import galeria12 from './assets/img/nat5.jpg'
-
+import cabanas from './assets/img/cabana1.jpg'
+import cabanas6 from './assets/img/cabana6.jpg'
 
 function NavBar() {
   return (
@@ -87,74 +88,59 @@ function ImageGallery() {
   );
 }
 
-function CabinCard({ title, description, image, moreInfoLink }) {
+function CabinCard() {
   return (
-    <div className="cabin-card">
-      <h3>{title}</h3>
-      <img src={image} alt={`Imagen de ${title}`} />
-      <p>{description}</p>
-      <a href={moreInfoLink} className="more-info-button">Ver Más</a>
+    <div>
+      <h2>Nuestras cabañas</h2>
+      <div className="cabin-card-container">
+        <div className="cabin-card">
+          <h3>Cabaña Amaraya</h3>
+          <img src={cabanas} alt="Cabañas" />
+          <p>DESCRIPCIÓN</p>
+          <a href="#" className="more-info-button">Ver Más</a>
+        </div>
+
+        <div className="cabin-card">
+          <h3>Cabaña El Recreo</h3>
+          <img src={galeria5} alt="Cabañas" />
+          <p>DESCRIPCIÓN</p>
+          <a href="#" className="more-info-button">Ver Más</a>
+        </div>
+
+        <div className="cabin-card">
+          <h3>Cabaña La Loma</h3>
+          <img src={galeria7} alt="Cabañas" />
+          <p>DESCRIPCIÓN</p>
+          <a href="#" className="more-info-button">Ver Más</a>
+        </div>
+
+        <div className="cabin-card">
+          <h3>Cabaña Pino</h3>
+          <img src={galeria8} alt="Cabañas" />
+          <p>DESCRIPCIÓN</p>
+          <a href="#" className="more-info-button">Ver Más</a>
+        </div>
+
+        <div className="cabin-card">
+          <h3>Cabaña Familiar 1</h3>
+          <img src={galeria9} alt="Cabañas" />
+          <p>DESCRIPCIÓN</p>
+          <a href="#" className="more-info-button">Ver Más</a>
+        </div>
+
+        <div className="cabin-card">
+          <h3>Cabaña Familiar 2</h3>
+          <img src={cabanas6} alt="Cabañas" />
+          <p>DESCRIPCIÓN</p>
+          <a href="#" className="more-info-button">Ver Más</a>
+        </div>
+      </div>
     </div>
   );
 }
 
-function CabinsSection() {
-  const cabins = [
-    {
-      title: 'Cabaña Amaraya',
-      description: 'Descripción de la Cabaña 1.',
-      image: 'imagenes/cabana2.jpg',
-      moreInfoLink: '#'
-    },
-    {
-      title: 'Cabaña el Recreo',
-      description: 'Descripción de la Cabaña 2.',
-      image: 'imagenes/cabana2.jpg',
-      moreInfoLink: '#'
-    },
-    {
-      title: 'Cabaña la Loma',
-      description: 'Descripción de la Cabaña 2.',
-      image: 'imagenes/cabana2.jpg',
-      moreInfoLink: '#'
-    },
-    {
-      title: 'Cabaña Pino',
-      description: 'Descripción de la Cabaña 2.',
-      image: 'imagenes/cabana2.jpg',
-      moreInfoLink: '#'
-    },
-    {
-      title: 'Cabaña Familiar 1',
-      description: 'Descripción de la Cabaña 2.',
-      image: 'imagenes/cabana2.jpg',
-      moreInfoLink: '#'
-    },
-    {
-      title: 'Cabaña Familiar 2',
-      description: 'Descripción de la Cabaña 2.',
-      image: 'imagenes/cabana2.jpg',
-      moreInfoLink: '#'
-    },
-  ];
 
-  return (
-    <section id="cabanas" className="cabins-section">
-      <h2>Nuestras Cabañas</h2>
-      <div className="cabins">
-        {cabins.map((cabin, index) => (
-          <CabinCard 
-            key={index}
-            title={cabin.title}
-            description={cabin.description}
-            image={cabin.image}
-            moreInfoLink={cabin.moreInfoLink}
-          />
-        ))}
-      </div>
-    </section>
-  );
-}
+
 
 function Map() {
   return (
@@ -201,7 +187,7 @@ function App() {
       <Banner />
       <Parrafo />
       <ImageGallery />
-      <CabinsSection />
+      <CabinCard />
       <Map />
       <Footer />
     </div>
