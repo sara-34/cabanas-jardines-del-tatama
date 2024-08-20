@@ -14,12 +14,7 @@ import galeria9 from './assets/img/nat2.jpg'
 import galeria10 from './assets/img/nat3.jpg'
 import galeria11 from './assets/img/nat4.jpg'
 import galeria12 from './assets/img/nat5.jpg'
-import cabana1 from './assets/img/cabana1.jpg'
-import cabana2 from './assets/img/cabana2.jpg'
-import cabana3 from './assets/img/cabana3.jpg'
-import cabana4 from './assets/img/cabana4.jpg'
-import cabana5 from './assets/img/cabana5.jpg'
-import cabana6 from './assets/img/cabana6.jpg'
+
 
 function NavBar() {
   return (
@@ -96,7 +91,7 @@ function CabinCard({ title, description, image, moreInfoLink }) {
   return (
     <div className="cabin-card">
       <h3>{title}</h3>
-      <img src={cabana2} alt={`Imagen de ${title}`} />
+      <img src={image} alt={`Imagen de ${title}`} />
       <p>{description}</p>
       <a href={moreInfoLink} className="more-info-button">Ver Más</a>
     </div>
