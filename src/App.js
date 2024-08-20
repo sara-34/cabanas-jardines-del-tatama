@@ -24,7 +24,7 @@ function NavBar() {
         <li><a href='#inicio'>Inicio</a></li>
         <li><a href='#cabanas'>Cabañas</a></li>
         <li><a href='#ubicacion'>Ubicación</a></li>
-        <li><a href='#contacto'>Contacto</a></li>
+        <li><a href='#contacto'>Contactanos</a></li>
       </ul>
     </nav>
   );
