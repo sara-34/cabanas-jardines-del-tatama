@@ -8,6 +8,11 @@ import galeria3 from './assets/img/gal3.jpg'
 import galeria4 from './assets/img/gal4.jpg'
 import galeria6 from './assets/img/gal6.jpg'
 import cabana1 from './assets/img/cabana1.jpg'
+import cabana2 from './assets/img/cabana2.jpg'
+import cabana3 from './assets/img/cabana3.jpg'
+import cabana4 from './assets/img/cabana4.jpg'
+import cabana5 from './assets/img/cabana5.jpg'
+import cabana6 from './assets/img/cabana6.jpg'
 import galeria10 from './assets/img/nat3.jpg'
 import galeria11 from './assets/img/nat4.jpg'
 import galeria12 from './assets/img/nat5.jpg'
@@ -98,35 +103,35 @@ function CabinCard() {
 
         <div className="cabin-card">
           <h3>Cabaña El Recreo</h3>
-          <img src={fondo} alt="Cabañas" />
+          <img src={cabana2} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña La Loma</h3>
-          <img src={fondo} alt="Cabañas" />
+          <img src={cabana3} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña Pino</h3>
-          <img src={fondo} alt="Cabañas" />
+          <img src={cabana4} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña Familiar 1</h3>
-          <img src={fondo} alt="Cabañas" />
+          <img src={cabana5} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
 
         <div className="cabin-card">
           <h3>Cabaña Familiar 2</h3>
-          <img src={fondo} alt="Cabañas" />
+          <img src={cabana6} alt="Cabañas" />
           <p>DESCRIPCIÓN</p>
           <a href="#" className="more-info-button">Ver Más</a>
         </div>
