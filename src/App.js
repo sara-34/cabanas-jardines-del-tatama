@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import './App.css';
 import CabinDetails from './CabinDetails';
-
 // Importación de imágenes
 import fondo from './assets/img/fondo2.jpg';
 import parrafo from './assets/img/DSC_8740.JPG';
@@ -21,9 +20,21 @@ import cabana5 from './assets/img/cabana5.jpg';
 import cabana6 from './assets/img/cabana6.jpg';
 
 // Componente NavBar
+
 function NavBar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 50);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className='nav-class'>
+    <nav className={`nav-class ${isScrolled ? 'scrolled' : ''}`}>
       <ul className='lista-nav'>
         <li><a href='#inicio'>Inicio</a></li>
         <li><a href='#cabanas'>Cabañas</a></li>
@@ -33,6 +44,8 @@ function NavBar() {
     </nav>
   );
 }
+
+
 
 // Componente Banner
 function Banner() {
@@ -161,7 +174,7 @@ function CabinCard() {
   };
 
   return (
-    <section id="cabanas">
+    <section id="cabanas" className='cabanas'>
       <h2>Nuestras cabañas</h2>
       <div className="cabin-card-container">
         {visibleCabins.map((cabin, index) => (
@@ -204,20 +217,30 @@ function Map() {
 function Footer() {
   return (
     <footer id="contacto" className="App-footer">
-      <h2>Información de Contacto</h2>
-      <p>Cabañas Jardines del Tatamá</p>
-      <p>Dirección: [Dirección específica]</p>
-      <p>Teléfono: [Número de teléfono]</p>
-      <p>Email: [Correo electrónico]</p>
-      <a 
-        href="https://wa.me/3122587675" 
-        className="reserve-button"
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        Reservar
-      </a>
-    </footer>
+  <div>
+    <h2>Información de Contacto</h2>
+    <p>Cabañas Jardines del Tatamá</p>
+    <p>Pueblo Rico</p>
+    <p>Teléfono Informacion: 3122587675 </p>
+    <p>Correo Electronico: cabanasjardinesdeltatama@gmail.com </p>
+  </div>
+  
+  <div className='boton-res'>
+    <a 
+      href="https://wa.me/3122587675?text=Hola%20estoy%20interesad@%20en%20reservar%20en%20Caba%C3%B1as%20Jardines%20del%20Tatam%C3%A1%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" 
+      className="reserve-button"
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+        alt="WhatsApp Icon"
+      />
+      Reservar
+    </a>
+  </div>
+</footer>
+
   );
 }
 

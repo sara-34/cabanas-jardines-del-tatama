@@ -7,11 +7,24 @@
   --colornaranjaoscuro : #BC6C25;
 }
 
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 /*background-color: var(--main-bg-color);*/
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "DM Serif Text", serif;
 }
 
 .App {
@@ -64,6 +77,48 @@ h1, h2 {
   }
 }
 
+/* Estilos por defecto para el nav */
+.nav-class {
+  background-color: transparent; /* Fondo transparente por defecto */
+  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+/* Estilos cuando se hace scroll */
+.nav-class.scrolled {
+  background-color: rgba(4, 31, 4, 0.5); /* Color verde oscuro con 50% de opacidad */
+}
+
+
+/* Otros estilos de la navegación */
+.lista-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.lista-nav li {
+  margin: 0 15px;
+}
+
+.lista-nav a {
+  color: var(--colorblandohabano);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lista-nav a:hover {
+  text-decoration: underline;
+}
 
 .nav-class {
   background-color: transparent;
@@ -96,7 +151,8 @@ h1, h2 {
 
 .lista-nav a {
   color: var(--colorblandohabano);
-  text-decoration:line;
+  text-decoration:none;
+  box-shadow: wheat;
   font-weight: bold;
 }
 
@@ -133,11 +189,28 @@ h1, h2 {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9); /* Sombra de la imagen */
 }
 
+/*botones*/
 
+.toggle-images-button{
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 1px solid var(--colorverdeclaro);
+  background-color: var(--colorverdeoscuro);
+  color: var(--colorblandohabano);
+}
 
-
-
-
+.toggle-cabins-button{
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 1px solid var(--colorverdeclaro);
+  background-color: var(--colorverdeoscuro);
+  color: var(--colorblandohabano);
+}
 /* Image Gallery styles */
 .image-gallery {
   padding: 2em 0;
@@ -196,7 +269,7 @@ h1, h2 {
   flex: 1;
   max-width: 100%; /* Asegura que el contenedor no sea más ancho que su contenedor padre */
   height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-  padding: 20px;
+  padding: 25px;
   background-color: var(--colorblandohabano);
   box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
   display: flex;
@@ -276,6 +349,11 @@ h1, h2 {
 
 
 /* CabinCard styles */
+
+.cabanas{
+  background-color: floralwhite;
+  margin-top: -15px;
+}
 .cabin-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -358,27 +436,69 @@ h1, h2 {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styles */
 .App-footer {
-  background-color: #333;
-  color: white;
-  padding: 2em 0;
+  background-color: var(--colorverdeoscuro);
+  color: var(--colorblandohabano);
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.App-footer h2, .App-footer p {
+.App-footer div {
   margin: 0.5em 0;
 }
 
-.reserve-button {
-  background-color: #ff4500;
+.boton-res {
+  margin-top: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-res .reserve-button {
+  margin-top: 90px;
+  background-color: #25D366;
   color: white;
   padding: 15px 25px;
   text-decoration: none;
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: 1em;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 250px;
 }
 
-.reserve-button:hover {
-  background-color: #e43f00;
+.boton-res .reserve-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.boton-res .reserve-button:hover {
+  background-color: #1ebc58;
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 768px) {
+  .App-footer {
+    padding: 2em 4em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .App-footer div {
+    flex: 1 1 auto;
+    margin: 0;
+  }
+
+  .boton-res {
+    margin-top: 0;
+    justify-content: flex-end; /* Botón al final del footer */
+  }
 }
