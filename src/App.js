@@ -217,30 +217,51 @@ function Map() {
 function Footer() {
   return (
     <footer id="contacto" className="App-footer">
-  <div>
-    <h2>Información de Contacto</h2>
-    <p>Cabañas Jardines del Tatamá</p>
-    <p>Pueblo Rico</p>
-    <p>Teléfono Informacion: 3122587675 </p>
-    <p>Correo Electronico: cabanasjardinesdeltatama@gmail.com </p>
-  </div>
-  
-  <div className='boton-res'>
-    <a 
-      href="https://wa.me/3122587675?text=Hola%20estoy%20interesad@%20en%20reservar%20en%20Caba%C3%B1as%20Jardines%20del%20Tatam%C3%A1%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" 
-      className="reserve-button"
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-        alt="WhatsApp Icon"
-      />
-      Reservar
-    </a>
-  </div>
-</footer>
+      <div className="contact-info">
+        <h2>Información de Contacto</h2>
+        <p>Cabañas Jardines del Tatamá</p>
+        <p>Correo Electrónico: cabanasjardinesdeltatama@gmail.com</p>
+        <div className="social-icons">
+          <a 
+            href="https://www.facebook.com/tu-pagina" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+              alt="Facebook Icon"
+            />
+            <p>Cabañas Jardines del Tatamá</p>
+          </a>
+          <a 
+            href="https://www.instagram.com/tu-pagina" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+              alt="Instagram Icon"
+            />
+            <p>Cabañas Jardines del Tatamá</p>
+          </a>
+        </div>
+      </div>
 
+      <div className='boton-res'>
+        <a 
+          href="https://wa.me/3122587675?text=Hola%20estoy%20interesad@%20en%20reservar%20en%20Caba%C3%B1as%20Jardines%20del%20Tatam%C3%A1%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" 
+          className="reserve-button"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+            alt="WhatsApp Icon"
+          />
+          Reservar
+        </a>
+      </div>
+    </footer>
   );
 }
 
