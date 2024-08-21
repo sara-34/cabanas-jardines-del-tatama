@@ -1,0 +1,32 @@
+.cabin-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .cabin-details-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cabin-details-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .close-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

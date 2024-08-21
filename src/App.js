@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
+import CabinDetails from './CabinDetails';
+
+// Importación de imágenes
 import fondo from './assets/img/fondo2.jpg';
 import parrafo from './assets/img/DSC_8740.JPG';
 import galeria1 from './assets/img/gal1.jpg';
@@ -17,6 +20,7 @@ import cabana4 from './assets/img/cabana4.jpg';
 import cabana5 from './assets/img/cabana5.jpg';
 import cabana6 from './assets/img/cabana6.jpg';
 
+// Componente NavBar
 function NavBar() {
   return (
     <nav className='nav-class'>
@@ -30,6 +34,7 @@ function NavBar() {
   );
 }
 
+// Componente Banner
 function Banner() {
   return (
     <header className="App-header">
@@ -43,6 +48,7 @@ function Banner() {
   );
 }
 
+// Componente Parrafo
 function Parrafo() {
   return (
     <div className='parrafo'>
@@ -60,6 +66,7 @@ function Parrafo() {
   );
 }
 
+// Componente ImageGallery
 function ImageGallery() {
   const [showAllImages, setShowAllImages] = useState(false);
 
@@ -95,16 +102,48 @@ function ImageGallery() {
   );
 }
 
+// Componente CabinCard
 function CabinCard() {
   const [showAllCabins, setShowAllCabins] = useState(false);
+  const [selectedCabin, setSelectedCabin] = useState(null);
 
   const cabins = [
-    { name: 'Cabaña Amaraya', image: cabana1 },
-    { name: 'Cabaña El Recreo', image: cabana2 },
-    { name: 'Cabaña La Loma', image: cabana3 },
-    { name: 'Cabaña Pino', image: cabana4 },
-    { name: 'Cabaña Familiar 1', image: cabana5 },
-    { name: 'Cabaña Familiar 2', image: cabana6 },
+    {
+      name: 'Cabaña Amaraya',
+      image: cabana1,
+      description: 'Descripción detallada de la Cabaña Amaraya. Incluye servicios como Wi-Fi, piscina, etc.',
+      images: [cabana1] // Añade más imágenes según sea necesario
+    },
+    {
+      name: 'Cabaña El Recreo',
+      image: cabana2,
+      description: 'Descripción detallada de la Cabaña El Recreo. Ideal para familias y grupos grandes.',
+      images: [cabana2, /* otras imágenes */]
+    },
+    {
+      name: 'Cabaña La Loma',
+      image: cabana3,
+      description: 'Descripción detallada de la Cabaña La Loma. Rodeada de naturaleza y tranquilidad.',
+      images: [cabana3, /* otras imágenes */]
+    },
+    {
+      name: 'Cabaña Pino',
+      image: cabana4,
+      description: 'Descripción detallada de la Cabaña Pino. Acogedora y rústica, perfecta para parejas.',
+      images: [cabana4, /* otras imágenes */]
+    },
+    {
+      name: 'Cabaña Familiar 1',
+      image: cabana5,
+      description: 'Descripción detallada de la Cabaña Familiar 1. Espaciosa y cómoda para familias grandes.',
+      images: [cabana5, /* otras imágenes */]
+    },
+    {
+      name: 'Cabaña Familiar 2',
+      image: cabana6,
+      description: 'Descripción detallada de la Cabaña Familiar 2. Con todas las comodidades para un descanso perfecto.',
+      images: [cabana6, /* otras imágenes */]
+    },
   ];
 
   const visibleCabins = showAllCabins ? cabins : cabins.slice(0, 3);
@@ -113,26 +152,37 @@ function CabinCard() {
     setShowAllCabins(!showAllCabins);
   };
 
+  const handleShowDetails = (cabin) => {
+    setSelectedCabin(cabin);
+  };
+
+  const handleCloseDetails = () => {
+    setSelectedCabin(null);
+  };
+
   return (
-    <section>
+    <section id="cabanas">
       <h2>Nuestras cabañas</h2>
       <div className="cabin-card-container">
         {visibleCabins.map((cabin, index) => (
           <div key={index} className="cabin-card">
             <h3>{cabin.name}</h3>
-            <img src={cabin.image} alt={cabin.name} />
-            <p>DESCRIPCIÓN</p>
-            <a href="#" className="more-info-button">Ver Más</a>
+            <img src={cabin.image} alt={cabin.name} className="cabin-img" />
+            <p>{cabin.description.slice(0, 50)}...</p> {/* Resumen de la descripción */}
+            <button onClick={() => handleShowDetails(cabin)} className="more-info-button">Ver Más</button>
           </div>
         ))}
       </div>
       <button onClick={handleToggleCabins} className="toggle-cabins-button">
         {showAllCabins ? 'Mostrar Menos' : 'Ver Más'}
       </button>
+
+      {selectedCabin && <CabinDetails cabin={selectedCabin} onClose={handleCloseDetails} />}
     </section>
   );
 }
 
+// Componente Map
 function Map() {
   return (
     <section id="ubicacion" className="map-section">
@@ -150,6 +200,7 @@ function Map() {
   );
 }
 
+// Componente Footer
 function Footer() {
   return (
     <footer id="contacto" className="App-footer">
@@ -170,6 +221,7 @@ function Footer() {
   );
 }
 
+// Componente principal App
 function App() {
   return (
     <div className="App">
@@ -185,4 +237,3 @@ function App() {
 }
 
 export default App;
-
