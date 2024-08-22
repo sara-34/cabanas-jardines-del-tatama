@@ -225,7 +225,7 @@ function Footer() {
         <p>Correo Electrónico: cabanasjardinesdeltatama@gmail.com</p>
         <div className="social-icons">
           <a 
-            href="https://www.facebook.com/tu-pagina" 
+            href="https://www.facebook.com/luisfernando.londonoagudelo.142?mibextid=LQQJ4d " 
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -236,7 +236,7 @@ function Footer() {
             <p>Cabañas Jardines del Tatamá</p>
           </a>
           <a 
-            href="https://www.instagram.com/tu-pagina" 
+            href="https://www.instagram.com/jardines_deltatama" 
             target="_blank" 
             rel="noopener noreferrer"
           >
