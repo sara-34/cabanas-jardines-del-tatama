@@ -488,38 +488,39 @@ h1, h2 {
   .App-footer {
     padding: 2em 4em;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
+    justify-content: center; /* Centra todo el contenido */
+    align-items: center;
+    text-align: center; /* Alinea el texto al centro */
   }
 
   .App-footer div {
     flex: 1;
     margin: 0;
+    text-align: center; /* Asegura que cada div esté centrado */
   }
 
   .boton-res {
     margin-top: 0;
-    justify-content: flex-end; /* Botón al final del footer */
-  }
-  .social-icons {
-    right: 20px;
+    justify-content: center; /* Centra el botón en el footer */
   }
 }
 
 .contact-info {
   margin-bottom: 2em;
+  text-align: center; /* Alinea la información de contacto al centro */
 }
 
 .contact-info h2 {
   margin-bottom: 1em;
   font-size: 1.5em;
   color: var(--colorblandohabano);
+  text-align: center;
 }
 
 .contact-info p {
   margin: 0.5em 0;
   font-size: 1.1em;
+  text-align: center;
 }
 
 .social-icons {
@@ -527,6 +528,7 @@ h1, h2 {
   flex-direction: column;
   gap: 15px;
   margin-top: 1em;
+  align-items: center; /* Asegura que los íconos estén centrados */
 }
 
 .social-icons a {
@@ -535,6 +537,7 @@ h1, h2 {
   gap: 10px;
   text-decoration: none;
   color: var(--colorblandohabano);
+  justify-content: center;
 }
 
 .social-icons img {

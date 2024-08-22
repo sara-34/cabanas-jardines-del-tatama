@@ -220,6 +220,8 @@ function Footer() {
       <div className="contact-info">
         <h2>Información de Contacto</h2>
         <p>Cabañas Jardines del Tatamá</p>
+        <p>Ubicacion: Pueblo Rico</p>
+        <p>Teléfono Información: 3122587675</p>
         <p>Correo Electrónico: cabanasjardinesdeltatama@gmail.com</p>
         <div className="social-icons">
           <a 
