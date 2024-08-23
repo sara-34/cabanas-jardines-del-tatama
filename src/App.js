@@ -277,8 +277,8 @@ function App() {
       <Banner />
       <Parrafo />
       <ImageGallery />
-      <CabinCard />
       <Map />
+      <CabinCard />
       <Footer />
     </div>
   );
