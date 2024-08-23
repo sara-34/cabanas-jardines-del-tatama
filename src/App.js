@@ -109,7 +109,7 @@ function ImageGallery() {
         ))}
       </div>
       <button onClick={handleToggleImages} className="toggle-images-button">
-        {showAllImages ? 'Mostrar Menos' : 'Ver Más'}
+        {showAllImages ? 'Ver Menos' : 'Ver Más'}
       </button>
     </section>
   );
@@ -124,7 +124,7 @@ function CabinCard() {
     {
       name: 'Cabaña Amaraya',
       image: cabana1,
-      description: 'Descripción detallada de la Cabaña Amaraya. Incluye servicios como Wi-Fi, piscina, etc.',
+      description: 'Nuestra cabaña Amaraya cuenta con  ',
       images: [cabana1] // Añade más imágenes según sea necesario
     },
     {
@@ -155,7 +155,7 @@ function CabinCard() {
       name: 'Cabaña Familiar 2',
       image: cabana6,
       description: 'Descripción detallada de la Cabaña Familiar 2. Con todas las comodidades para un descanso perfecto.',
-      images: [cabana6, /* otras imágenes */]
+      images: [cabana6]
     },
   ];
 
@@ -182,12 +182,14 @@ function CabinCard() {
             <h3>{cabin.name}</h3>
             <img src={cabin.image} alt={cabin.name} className="cabin-img" />
             <p>{cabin.description.slice(0, 50)}...</p> {/* Resumen de la descripción */}
-            <button onClick={() => handleShowDetails(cabin)} className="more-info-button">Ver Más</button>
+            
+              <button onClick={() => handleShowDetails(cabin)} className="more-info-button">Más Informacion</button>
+         
           </div>
         ))}
       </div>
       <button onClick={handleToggleCabins} className="toggle-cabins-button">
-        {showAllCabins ? 'Mostrar Menos' : 'Ver Más'}
+        {showAllCabins ? 'Mostrar Menos' : 'Mostrar Más'}
       </button>
 
       {selectedCabin && <CabinDetails cabin={selectedCabin} onClose={handleCloseDetails} />}

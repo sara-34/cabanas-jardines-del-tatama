@@ -363,8 +363,9 @@ h1, h2 {
 }
 
 .cabin-card {
-  background-color: #f0f0f0;
+  background-color: var(--colornaranjaoscuro);
   border-radius: 10px;
+  color: var(--colorblandohabano);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 100%;
@@ -394,10 +395,11 @@ h1, h2 {
 .more-info-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: var(--colorverdeoscuro);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  border: 1px solid --colorblandohabano;
   transition: background-color 0.3s ease;
 }
 
@@ -424,7 +426,7 @@ h1, h2 {
 /* Map styles */
 .map-section {
   padding: 2em 0;
-  background-color: #f7f7f7;
+  background-color: floralwhite;
 }
 
 .map-section iframe {
