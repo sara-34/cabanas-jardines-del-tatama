@@ -389,7 +389,7 @@ h1, h2 {
 .cabin-card p {
   margin-bottom: 15px;
   font-size: 1rem;
-  color: #555;
+  color: var(--colorblandohabano);
 }
 
 .more-info-button {
@@ -398,13 +398,13 @@ h1, h2 {
   background-color: var(--colorverdeoscuro);
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid --colorblandohabano;
+  border-radius: 30px;
+  border: 1px solid var(--colorblandohabano);
   transition: background-color 0.3s ease;
 }
 
 .more-info-button:hover {
-  background-color: #0056b3;
+  background-color: var(--colorverdeclaro);
 }
 
 @media (min-width: 600px) {
@@ -426,6 +426,7 @@ h1, h2 {
 /* Map styles */
 .map-section {
   padding: 2em 0;
+  border-top: 1px solid var(--colorverdeoscuro);
   background-color: floralwhite;
 }
 
