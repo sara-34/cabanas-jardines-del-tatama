@@ -2,8 +2,8 @@ import React, { useState , useEffect } from 'react';
 import './App.css';
 import CabinDetails from './CabinDetails';
 // Importación de imágenes
-import fondo from './assets/img/fondo2.jpg';
-import parrafo from './assets/img/DSC_8740.JPG';
+import fondo from './assets/img/banner.jpg';
+import parrafo from './assets/img/fondo2.jpg';
 import galeria1 from './assets/img/gal1.jpg';
 import galeria2 from './assets/img/gal2.jpg';
 import galeria3 from './assets/img/gal3.jpg';
