@@ -69,11 +69,15 @@ function Parrafo() {
         <img src={parrafo} alt="Parrafo" className="banner-img" />
       </div>
       <p>
-        Descubre un oasis de tranquilidad y diversión en Cabañas Jardines del Tatamá. 
-        Relájate en nuestras acogedoras cabañas mientras disfrutas de actividades al aire libre, 
-        entretenimiento en nuestro salón de juegos y deliciosos platillos en nuestro restaurante. 
-        Ya sea para una escapada corta o una estadía prolongada, te ofrecemos el lugar perfecto 
-        para crear recuerdos inolvidables en un entorno natural impresionante.
+      Cabañas Jardines del Tatamá
+       es  un espacio diseñado para 
+       la conexión  con lo naturaleza, 
+       un verdadero descanso donde se puede 
+       disfrutar de exuberantes paisajes con una 
+       hermosa vista hacia el imponente cerro Tatama, 
+       amaneceres llenos de cantos de aves, sonidos de rio 
+       y un contraste de colores que despertaran todos los 
+       sentidos.
       </p>
     </div>
   );
