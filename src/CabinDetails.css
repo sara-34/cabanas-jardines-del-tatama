@@ -1,91 +1,190 @@
-*{
-  --colorverdeclaro : #606C38;
-  --colorverdeoscuro : #283618;
-  --colorblandohabano : #FEFAE0;
-  --colornaranjaclaro : #DDA15E;
-  --colornaranjaoscuro : #BC6C25;
+* {
+  --colorverdeclaro: #606C38;
+  --colorverdeoscuro: #283618;
+  --colorblandohabano: #FEFAE0;
+  --colornaranjaclaro: #DDA15E;
+  --colornaranjaoscuro: #BC6C25;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h3{
-  font-size: 30px;
+h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--colorverdeoscuro);
 }
+
+
 .cabin-details {
   position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
   background-color: var(--colorblandohabano);
   color: var(--colorverdeoscuro);
   padding: 20px;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 1001; /* Asegúrate de que esté por encima del fondo oscuro */
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
+
+.cabin-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000; /* Debe estar justo debajo del contenedor */
+}
+
 
 .cabin-details-images {
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .cabin-details-img {
-  width: 150px;
+  width: 100%;
   max-width: 150px;
   height: auto;
   object-fit: cover;
+  border-radius: 8px;
 }
 
-.close-button {
-  
-  top: 20px;
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.reserve-button{
   background: var(--colornaranjaoscuro);
-  width: 60px;
-  height: 40px;
-  border-radius: 20px;
   color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
   border: none;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 150px;
+
+}
+.close-button {
+  background: var(--colorverdeoscuro);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 80px;
+
+}
+
+/* Estilos para el modal de imagen */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  z-index: 1100;
 }
 
+.image-modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.image-modal-content:hover {
+  transform: scale(1.05);
+}
+
+.cabin-details-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cabin-details-img:hover {
+  transform: scale(1.1);
+}
+
+
+.reserve-button:hover,
 .close-button:hover {
   background-color: var(--colornaranjaclaro);
 }
 
-/* Media queries para diferentes tamaños de pantalla */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 @media (max-width: 768px) {
   .cabin-details {
-    padding: 10px;
+    padding: 15px;
   }
 
-  .cabin-details-img {
-    max-width: 150px;
+  h3 {
+    font-size: 1.5rem;
   }
 
+  .reserve-button,
   .close-button {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    width: 160px;
   }
 }
 
 @media (max-width: 480px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+
   .cabin-details-img {
     max-width: 100px;
   }
 
+  .reserve-button,
   .close-button {
-    width: 25px;
-    height: 25px;
-    font-size: 14px;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    width: 140px;
+  }
+
+  .close-button {
+    top: 10px;
+    right: 10px;
   }
 }
-
