@@ -5,6 +5,7 @@
   --colorblandohabano : #FEFAE0;
   --colornaranjaclaro : #DDA15E;
   --colornaranjaoscuro : #BC6C25;
+  font-family: "Cinzel", Georgia, serif;
 }
 
 
@@ -384,6 +385,7 @@ h1, h2 {
 .cabin-card h3 {
   margin-bottom: 10px;
   font-size: 1.5rem;
+  color: var(--colorblandohabano);
 }
 
 .cabin-card p {
