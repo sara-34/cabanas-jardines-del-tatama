@@ -90,7 +90,7 @@ p {
   background: var(--colorverdeoscuro);
   color: white;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 50%;
   border: none;
   font-size: 1rem;
   font-weight: bold;
@@ -98,7 +98,7 @@ p {
   transition: background-color 0.3s ease;
   text-align: center;
   margin-bottom: 10px;
-  width: 80px;
+  
 
 }
 
@@ -159,11 +159,10 @@ p {
     font-size: 1.5rem;
   }
 
-  .reserve-button,
-  .close-button {
+  .reserve-button{
     font-size: 0.9rem;
     padding: 8px 16px;
-    width: 160px;
+    width: 80px;
   }
 }
 
@@ -176,11 +175,10 @@ p {
     max-width: 100px;
   }
 
-  .reserve-button,
-  .close-button {
+  .reserve-button {
     font-size: 0.8rem;
     padding: 6px 12px;
-    width: 140px;
+    width: 80px;
   }
 
   .close-button {

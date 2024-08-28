@@ -41,7 +41,7 @@ function CabinDetails({ cabin, onClose }) {
         >
           Reservar
         </a>
-        <button onClick={onClose} className="close-button">Cerrar</button>
+        <button onClick={onClose} className="close-button">X</button>
 
         {selectedImage && (
           <div className="image-modal" onClick={closeImageModal}>
