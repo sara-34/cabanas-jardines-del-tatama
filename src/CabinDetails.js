@@ -6,7 +6,7 @@ function CabinDetails({ cabin, onClose }) {
 
   return (
     <div className="cabin-details">
-      <button onClick={onClose} className="close-button">X</button>
+      
       <h3>{cabin.name}</h3>
       <div className="cabin-details-images">
         {cabin.images.map((image, index) => (
@@ -14,7 +14,9 @@ function CabinDetails({ cabin, onClose }) {
         ))}
       </div>
       <p>{cabin.description}</p>
-      
+      <h2>ADICIONALES</h2>
+      <p>{cabin.adicional}</p>
+     
       <a 
         href={`https://wa.me/3122587675?text=${encodeURIComponent(whatsappMessage)}`} // Enlace con mensaje predefinido
         className="reserve-button" 
@@ -24,6 +26,7 @@ function CabinDetails({ cabin, onClose }) {
         
         Reservar
       </a>
+      <button onClick={onClose} className="close-button">Cerrar</button>
     </div>
   );
 }

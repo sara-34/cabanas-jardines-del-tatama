@@ -2,22 +2,26 @@ import React, { useState , useEffect } from 'react';
 import './App.css';
 import CabinDetails from './CabinDetails';
 // Importación de imágenes
-import fondo from './assets/img/banner.jpg';
-import parrafo from './assets/img/fondo2.jpg';
-import galeria1 from './assets/img/gal1.jpg';
-import galeria2 from './assets/img/gal2.jpg';
-import galeria3 from './assets/img/gal3.jpg';
-import galeria4 from './assets/img/gal4.jpg';
-import galeria6 from './assets/img/gal6.jpg';
-import galeria10 from './assets/img/nat3.jpg';
-import galeria11 from './assets/img/nat4.jpg';
-import galeria12 from './assets/img/nat5.jpg';
-import cabana1 from './assets/img/cabana1.jpg';
-import cabana2 from './assets/img/cabana2.jpg';
-import cabana3 from './assets/img/cabana3.jpg';
-import cabana4 from './assets/img/cabana4.jpg';
-import cabana5 from './assets/img/cabana5.jpg';
-import cabana6 from './assets/img/cabana6.jpg';
+import fondo from './assets/img/jpeg-optimizer_banner.jpg';
+import parrafo from './assets/img/jpeg-optimizer_fondo2.jpg';
+import galeria1 from './assets/img/jpeg-optimizer_gal1.jpg';
+import galeria2 from './assets/img/jpeg-optimizer_gal2.jpg';
+import galeria3 from './assets/img/jpeg-optimizer_gal3.jpg';
+import galeria4 from './assets/img/jpeg-optimizer_gal4.jpg';
+import galeria6 from './assets/img/jpeg-optimizer_gal6.jpg';
+import galeria10 from './assets/img/jpeg-optimizer_nat3.jpg';
+import galeria11 from './assets/img/jpeg-optimizer_nat4.jpg';
+import galeria12 from './assets/img/jpeg-optimizer_nat5.jpg';
+import cabana1 from './assets/img/jpeg-optimizer_cabana1.jpg';
+import cabana2 from './assets/img/jpeg-optimizer_cabana2.jpg';
+import cabana3 from './assets/img/jpeg-optimizer_cabana3.jpg';
+import cabana4 from './assets/img/jpeg-optimizer_cabana4.jpg';
+import cabana5 from './assets/img/jpeg-optimizer_cabana5.jpg';
+import cabana6 from './assets/img/jpeg-optimizer_cabana6.jpg';
+import habitacion1 from './assets/img/jpeg-optimizer_habitacioncabana1.jpg';
+import habitacioncabana1 from './assets/img/jpeg-optimizer_habitacion1.jpg';
+import bano1 from './assets/img/jpeg-optimizer_bano1.jpg';
+import frente1 from './assets/img/jpeg-optimizer_frentecabana1.jpg';
 
 // Componente NavBar
 
@@ -128,8 +132,9 @@ function CabinCard() {
     {
       name: 'Cabaña Amaraya',
       image: cabana1,
-      description: 'Nuestra cabaña Amaraya cuenta con  ',
-      images: [cabana1] // Añade más imágenes según sea necesario
+      description: 'Nuestra cabaña Amaraya cuenta con: una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
+      adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
+      images: [cabana1,habitacion1,habitacioncabana1,bano1,frente1] // Añade más imágenes según sea necesario
     },
     {
       name: 'Cabaña El Recreo',
