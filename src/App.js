@@ -1,7 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import './App.css';
 import CabinDetails from './CabinDetails';
-// Importación de imágenes
 import fondo from './assets/img/jpeg-optimizer_banner.jpg';
 import parrafo from './assets/img/jpeg-optimizer_fondo2.jpg';
 import galeria1 from './assets/img/jpeg-optimizer_gal1.jpg';
@@ -22,6 +21,29 @@ import habitacion1 from './assets/img/jpeg-optimizer_habitacioncabana1.jpg';
 import habitacioncabana1 from './assets/img/jpeg-optimizer_habitacion1.jpg';
 import bano1 from './assets/img/jpeg-optimizer_bano1.jpg';
 import frente1 from './assets/img/jpeg-optimizer_frentecabana1.jpg';
+import cama from './assets/img/cama2.jpg';
+import cama2 from './assets/img/camah2.jpg';
+import cama3 from './assets/img/habitacion2.jpg';
+import bano2 from './assets/img/bano2.jpg';
+import frente from './assets/img/frente2.jpg';
+import laloma1 from './assets/img/laloma1.jpg';
+import laloma2 from './assets/img/laloma2.jpg';
+import laloma3 from './assets/img/laloma3.jpg';
+import laloma4 from './assets/img/laloma4.jpg';
+import laloma5 from './assets/img/laloma5.jpg';
+import pino1 from './assets/img/pino1.jpg';
+import pino2 from './assets/img/pino2.jpg';
+import pino3 from './assets/img/pino3.jpg';
+import pino4 from './assets/img/pino4.jpg';
+import pino5 from './assets/img/pino5.jpg';
+import fam1 from './assets/img/familiar1.jpg';
+import fam2 from './assets/img/familiar2.jpg';
+import fam3 from './assets/img/familiar3.jpg';
+import fam4 from './assets/img/familiar4.jpg';
+import fam5 from './assets/img/familiar5.jpg';
+import fami1 from './assets/img/fam1.jpg';
+import fami2 from './assets/img/fam2.jpg';
+import fami3 from './assets/img/fam3.jpg';
 
 // Componente NavBar
 
@@ -132,39 +154,44 @@ function CabinCard() {
     {
       name: 'Cabaña Amaraya',
       image: cabana1,
-      description: 'Nuestra cabaña Amaraya cuenta con: una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
+      description: 'Nuestra cabaña Amaraya cuenta con una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
       adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
       images: [cabana1,habitacion1,habitacioncabana1,bano1,frente1] // Añade más imágenes según sea necesario
     },
     {
       name: 'Cabaña El Recreo',
       image: cabana2,
-      description: 'Descripción detallada de la Cabaña El Recreo. Ideal para familias y grupos grandes.',
-      images: [cabana2, /* otras imágenes */]
+      description: 'Nuestra cabaña el Recreo cuenta con una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
+      adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
+      images: [cabana2,cama,cama2,cama3,bano2,frente]
     },
     {
       name: 'Cabaña La Loma',
       image: cabana3,
-      description: 'Descripción detallada de la Cabaña La Loma. Rodeada de naturaleza y tranquilidad.',
-      images: [cabana3, /* otras imágenes */]
+      description: 'Nuestra cabaña la Loma cuenta con una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
+      adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
+      images: [cabana3,laloma1,laloma2,laloma3,laloma4,laloma5]
     },
     {
       name: 'Cabaña Pino',
       image: cabana4,
-      description: 'Descripción detallada de la Cabaña Pino. Acogedora y rústica, perfecta para parejas.',
-      images: [cabana4, /* otras imágenes */]
+      description: 'Nuestra cabaña Pino cuenta con una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
+      adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
+      images: [cabana4,pino1,pino2,pino3,pino4,pino5]
     },
     {
-      name: 'Cabaña Familiar 1',
+      name: 'Cabaña Familiar I',
       image: cabana5,
-      description: 'Descripción detallada de la Cabaña Familiar 1. Espaciosa y cómoda para familias grandes.',
-      images: [cabana5, /* otras imágenes */]
+      description: 'Nuestra cabaña Familiar I cuenta con tres camas 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
+      adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
+      images: [cabana5,fam1,fam2,fam3,fam4,fam5]
     },
     {
-      name: 'Cabaña Familiar 2',
+      name: 'Cabaña Familiar II',
       image: cabana6,
-      description: 'Descripción detallada de la Cabaña Familiar 2. Con todas las comodidades para un descanso perfecto.',
-      images: [cabana6]
+      description: 'Nuestra cabaña Familiar II cuenta con tres camas 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
+      adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
+      images: [cabana6,fami1,fami2,fami3]
     },
   ];
 
@@ -188,12 +215,10 @@ function CabinCard() {
       <div className="cabin-card-container">
         {visibleCabins.map((cabin, index) => (
           <div key={index} className="cabin-card">
-            <h3>{cabin.name}</h3>
             <img src={cabin.image} alt={cabin.name} className="cabin-img" />
-            <p>{cabin.description.slice(0, 50)}...</p> {/* Resumen de la descripción */}
-            
+            <h3>{cabin.name}</h3>
+            <p>{cabin.description.slice(0, 60)}...</p> {/* Resumen de la descripción */}
               <button onClick={() => handleShowDetails(cabin)} className="more-info-button">Más Informacion</button>
-         
           </div>
         ))}
       </div>

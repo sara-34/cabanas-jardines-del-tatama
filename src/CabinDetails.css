@@ -59,7 +59,7 @@ h3 {
 
 .cabin-details-img {
   width: 100%;
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -73,7 +73,7 @@ p {
 }
 
 .reserve-button{
-  background: var(--colornaranjaoscuro);
+  background: var(--colorverdeoscuro);
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -88,9 +88,9 @@ p {
 
 }
 .close-button {
-  background: var(--colorverdeoscuro);
+  background: var(--colornaranjaoscuro);
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 50%;
   border: none;
   font-size: 1rem;
@@ -140,11 +140,12 @@ p {
 }
 
 
-.reserve-button:hover,
-.close-button:hover {
-  background-color: var(--colornaranjaclaro);
+.reserve-button:hover {
+  background-color: var(--colorverdeclaro);
 }
-
+.close-button:hover{
+background-color: var(--colornaranjaclaro);
+}
 .close-button {
   position: absolute;
   top: 20px;
