@@ -25,13 +25,10 @@ import cama from './assets/img/cama2.jpg';
 import cama2 from './assets/img/camah2.jpg';
 import cama3 from './assets/img/habitacion2.jpg';
 import bano2 from './assets/img/bano2.jpg';
-import frente from './assets/img/frente2.jpg';
 import laloma1 from './assets/img/laloma1.jpg';
 import laloma2 from './assets/img/laloma2.jpg';
 import laloma3 from './assets/img/laloma3.jpg';
 import laloma4 from './assets/img/laloma4.jpg';
-import laloma5 from './assets/img/laloma5.jpg';
-import pino1 from './assets/img/pino1.jpg';
 import pino2 from './assets/img/pino2.jpg';
 import pino3 from './assets/img/pino3.jpg';
 import pino4 from './assets/img/pino4.jpg';
@@ -40,7 +37,6 @@ import fam1 from './assets/img/familiar1.jpg';
 import fam2 from './assets/img/familiar2.jpg';
 import fam3 from './assets/img/familiar3.jpg';
 import fam4 from './assets/img/familiar4.jpg';
-import fam5 from './assets/img/familiar5.jpg';
 import fami1 from './assets/img/fam1.jpg';
 import fami2 from './assets/img/fam2.jpg';
 import fami3 from './assets/img/fam3.jpg';
@@ -163,28 +159,28 @@ function CabinCard() {
       image: cabana2,
       description: 'Nuestra cabaña el Recreo cuenta con una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
       adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
-      images: [cabana2,cama,cama2,cama3,bano2,frente]
+      images: [cabana2,cama,cama2,cama3,bano2]
     },
     {
       name: 'Cabaña La Loma',
       image: cabana3,
       description: 'Nuestra cabaña la Loma cuenta con una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
       adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
-      images: [cabana3,laloma1,laloma2,laloma3,laloma4,laloma5]
+      images: [cabana3,laloma1,laloma2,laloma3,laloma4]
     },
     {
       name: 'Cabaña Pino',
       image: cabana4,
       description: 'Nuestra cabaña Pino cuenta con una cama 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
       adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
-      images: [cabana4,pino1,pino2,pino3,pino4,pino5]
+      images: [cabana4,pino2,pino3,pino4,pino5]
     },
     {
       name: 'Cabaña Familiar I',
       image: cabana5,
       description: 'Nuestra cabaña Familiar I cuenta con tres camas 🛏️, un baño 🛀, un televisor 📺, piscina y salon de juegos🎱',
       adicional: 'Podras incluir adicionalmente caminatas naturales, visitas al rio cerca del hermoso Tatama, restaurante y cafe...',
-      images: [cabana5,fam1,fam2,fam3,fam4,fam5]
+      images: [cabana5,fam1,fam2,fam3,fam4]
     },
     {
       name: 'Cabaña Familiar II',
